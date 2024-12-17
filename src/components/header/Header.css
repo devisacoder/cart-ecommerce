@@ -1,0 +1,13 @@
+.container-header{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.line {
+    border-top: 1px solid #cecece; 
+    margin: 20px 0;
+}
+.cartIcon{
+    cursor: pointer;
+}
