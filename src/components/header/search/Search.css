@@ -1,0 +1,22 @@
+.container-search{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+.input-search{
+    height: 28px;
+    width: 250px;
+    border: none;
+}
+.button-input{
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.input-search:focus{
+    border: none;
+    outline: none;
+}
