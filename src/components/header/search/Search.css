@@ -1,14 +1,14 @@
 .container-search{
     border: 1px solid gray;
-    border-radius: 10px;
-    padding: 2px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
+    width: 26%;
 }
 .input-search{
     height: 28px;
-    width: 250px;
     border: none;
+    width: 100%;
 }
 .button-input{
     height: 28px;
@@ -20,3 +20,4 @@
     border: none;
     outline: none;
 }
+

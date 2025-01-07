@@ -6,7 +6,7 @@ export const Header = () => {
     return (
         <section>
             <div className='container-header'>
-                <h1>Ecommerce</h1>
+                <h1>Exclusive</h1>
                 <Search/>
                 <img src={cartIcon} alt="cartIcon" className='cartIcon'/>
             </div>
