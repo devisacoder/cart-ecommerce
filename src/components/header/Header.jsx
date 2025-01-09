@@ -1,6 +1,7 @@
 import './Header.css'
 import { Search } from './search/Search'
 import cartIcon from '../../assets/cartIcon.svg'
+import { Slider } from '../Slider/Slider'
 
 export const Header = () => {
     return (
@@ -11,6 +12,7 @@ export const Header = () => {
                 <img src={cartIcon} alt="cartIcon" className='cartIcon'/>
             </div>
                 <div className='line'></div>
+                <Slider/>
         </section>
     )
 }
