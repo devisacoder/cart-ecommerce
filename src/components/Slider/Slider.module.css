@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image {
+    border-radius: 4px;
+    width: 68vw;
+    height: 30vh;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.3rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.active {
+    background-color: rgba(245, 52, 52, 0.8);
+    border: 1px solid white;
+    width: 12px;
+    height: 12px;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .image {
+        width: 80vw;
+        height: 24vh;
+    }
+}

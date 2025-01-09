@@ -4,10 +4,13 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
 .line {
     border-top: 1px solid #cecece; 
     margin: 20px 0;
+    width: 100%;
 }
+
 .cartIcon{
     cursor: pointer;
 }
