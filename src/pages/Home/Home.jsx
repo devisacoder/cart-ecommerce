@@ -1,4 +1,4 @@
-import { DropDown } from "../../components/categorias/dropDown"
+import { DropDown } from "../../components/categorias/Categories"
 import { Header } from "../../components/header/Header"
 import { Slider } from "../../components/Slider/Slider"
 

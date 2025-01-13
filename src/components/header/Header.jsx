@@ -1,5 +1,5 @@
 import './Header.css'
-import { DropDown } from '../categorias/dropDown'
+import { DropDown } from '../categorias/Categories'
 import { Search } from './search/Search'
 import cartIcon from '../../assets/cartIcon.svg'
 

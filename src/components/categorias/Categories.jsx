@@ -1,4 +1,4 @@
-import styles from './dropDown.module.css';
+import styles from './Categories.module.css';
 import { useContext, useEffect, useState } from 'react';
 import { ProductContext } from '../../context/ProductContext';
 
