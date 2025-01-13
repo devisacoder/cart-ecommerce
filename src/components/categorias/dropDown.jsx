@@ -1,25 +1,49 @@
-import styles from './dropDown.module.css'
-import { useState } from 'react'
+import styles from './dropDown.module.css';
+import { useContext, useEffect, useState } from 'react';
+import { ProductContext } from '../../context/ProductContext';
 
 export const DropDown = () => {
-    const [ isOpen, setIsOpen ] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 580);
+    const { category } = useContext(ProductContext);
 
-    const handleClick = () => {
-        setIsOpen((prevState) => !prevState)
-    }
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 580);
+            if (window.innerWidth > 580) {
+                setIsOpen(true); // Asegurar que esté abierto en pantallas grandes
+            }else{
+                setIsOpen(false); // Asegurar que esté cerrado en pantallas pequeñas
+            }   
+        };
 
-    return(
-        <div className={styles.container}>
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
-            <button onClick={handleClick}>Categories</button>
-            {isOpen && (
-                <lu className={styles.menu}>
-                    <li className={styles.item}>Mujer</li>
-                    <li className={styles.item}>Hombre</li>
-                    <li className={styles.item}>Hogar</li>
-                    <li className={styles.item}>Tecnologia</li>
-                </lu>
+    const handleOpen = () => {
+        if (isSmallScreen) {
+            setIsOpen((prevState) => !prevState);
+        }
+    };
+
+    return (
+        <div className={styles.containerDropDown}>
+            <button className={styles.dropDown} onClick={handleOpen}>
+                Categories ↓ 
+            </button>
+            {(isOpen || !isSmallScreen) && (
+                <div className={`${styles.containerItems} ${isOpen && styles.isOpen}`}>
+                    {category.map((categories, index) => (
+                        <p
+                            className={styles.item}
+                            key={index}
+                        >
+                            {categories}
+                        </p>
+                    ))}
+                </div>
             )}
         </div>
-    )
-}
+    );
+};

@@ -4,62 +4,368 @@
         "id": 1,
         "description": "Televisor de 64', Neo QLED Samsung",
         "image": "https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:low/1686682640740-hsmobile2.jpg",
-        "precio": 40000000
+        "category": "Promotions",
+        "before":4000000,
+        "price": 3000000
     },
     {
         "name": "Monitor Gamer'", 
         "id": 2,
         "description": "Monitor gamer de 27'",
         "image": "https://fanaticosdelhardware.com/wp-content/uploads/2024/09/Xiaomi-Gaming-Monitor-24i-portada.jpg",
-        "precio": 10000000
+        "category": "Promotions",
+        "before": 15000000,
+        "price": 10000000
     },
     {
-        "name": "Mouse gamer ros", 
+        "name": "Combo gamer", 
         "id": 3,
-        "description": "Mouse gamer rosa",
+        "description": "Combo mouse, audifonos, teclado y mousepad gmaer rosa ",
         "image": "https://media.gamecentar.rs/slike/blog/set-marvo-cm370-pink-baner-cena-prodaja.jpg",
-        "precio": 100000
+        "category": "Promotions",
+        "before": 280000,
+        "price": 100000
     },
     {
         "name": "Silla y escritorio gamer", 
         "id": 4,
         "description": "Silla y escritorio gamer minimalista",
         "image": "https://m.media-amazon.com/images/I/716zBILDOoL._AC_UF894,1000_QL80_.jpg",
-        "precio": 2500000
+        "category": "Promotions",
+        "before": 2500000,
+        "price": 2000000
     },
     {
         "name": "Teclado gamer negro ", 
         "id": 5,
         "description": "Teclado gamer negro con luces led rgb",
         "image": "https://www.energysistem.com/cdnassets/blog/Que-teclado-ES-Gaming-comprar.webp",
-        "precio": 200000
+       "category": "Promotions",
+       "before": 300000,
+        "price": 200000
     },
     {
         "name": "Xbox x series", 
         "id": 6,
         "description": "Xbox x series, en negro y blanco con control",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEPkyTKBK008EKr60-nEIxdeMqDNKuKvBun_pAZerZFDGmbGcG",
-        "precio": 4000000
+        "category": "Promotions",
+        "before": 5000000,
+        "price": 4000000
     },
     {
         "name": "Zapatos de charol", 
         "id": 7,
         "description": "Zapatos de charol negro, viene con medias blancas",
         "image": "https://theobjective.com/wp-content/uploads/2022/11/mocasines.jpg",
-        "precio": 500000
+        "category": "Promotions",
+        "before": 550000,
+        "price": 500000
     },
     {
         "name": "Zapatos Nike negro y rojo", 
         "id": 8,
         "description": "Zapatos nike negro y rojo, con estrella de cinco puntas",
         "image": "https://cdn.forbes.co/2021/03/Lil-Nas-X-Satan-.jpg",
-        "precio": 4000000
+        "category": "Promotions",
+        "before": 4800000,
+        "price": 4000000
     },
     {
         "name": "Silla mecedora", 
         "id": 9,
         "description": "Silla mecedora para jardin",
         "image": "https://media.adeo.com/marketplace/MKP/91304628/345a367c88ac815657137f7d2551539e.jpeg?width=650&height=650&format=jpg&quality=80&fit=bounds",
-        "precio": 1000000
+        "category": "Promotions",
+        "before": 2000000,
+        "price": 1000000
+    },
+    {
+        "name": "Paleta rosa", 
+        "id": 10,
+        "description": "Paleta de sombras con 4 tonos, rosa brillante, rosa mate, iluminador y broncer",
+        "image": "https://uperfect.pe/cdn/shop/products/imagen_2022-07-07_102803735.png?v=1657207751&width=533",
+        "category": "Maquillaje",
+        "price": 12000
+    },    
+    {
+        "name": "Paleta naranja", 
+        "id": 11,
+        "description": "Paleta de sombras con 4 tonos, naranja, cafe, iluminador y mostaza",
+        "image": "https://uperfect.pe/cdn/shop/products/imagen_2022-07-07_102500853.png?v=1657207539&width=533",
+        "category": "Maquillaje",
+        "price": 10000
+    },
+    {
+        "name": "Paleta clara", 
+        "id": 12,
+        "description": "Paleta de sombras con 4 tonos verdosos, color claro, verde claro, cafe verdoso y verde mas oscuro",
+        "image": "https://uperfect.pe/cdn/shop/products/imagen_2022-07-07_102500853.png?v=1657207539&width=533",
+        "category": "Maquillaje",
+        "price": 8000
+    },
+    {
+        "name": "Paleta rosa claro", 
+        "id": 13,
+        "description": "Paleta de sombras con 4 tonos, iluminador, cafe claro, coral y rosa claro",
+        "image": "https://uperfect.pe/cdn/shop/products/AtFirstCrush.jpg?v=1651587978&width=533",
+        "category": "Maquillaje",
+        "price": 18000
+    },
+    {
+        "name": "Base 24 horas", 
+        "id": 14,
+        "description": "Base de maquillaje, Studio Look 24 horas de duracion",
+        "image": "https://belcorpperu.vtexassets.com/arquivos/ids/304225-800-800?v=638509645120070000&width=800&height=800&aspect=true",
+        "category": "Maquillaje",
+        "price": 20000
+    },
+    {
+        "name": "Base SHEGLAM", 
+        "id": 15,
+        "description": "Base de maquillaje, SHEGLAM hidratante",
+        "image": "https://beautyglaminc.com/wp-content/uploads/2024/08/th-11134207-7r98q-lmq9nroi6ummf1.png",
+        "category": "Maquillaje",
+        "price": 40000
+    },
+    {
+        "name": "Base ATENEA", 
+        "id": 16,
+        "description": "Base de maquillaje, ATENEA base liquida",
+        "image": "https://ateneaprofesional.com/cdn/shop/files/Atenea_faltantes0027_1080x1080.jpg?v=1723652868",
+        "category": "Maquillaje",
+        "price": 46000
+    },
+    {
+        "name":"Zapatos casuales hombre", 
+        "id": 17,
+        "description": "Zapatos casuales negros con cordones",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_785842-MCO48322402150_112021-O.webp",
+        "category": "Zapatos H",
+        "price": 150000
+    },
+    {
+        "name": "Zapatos casual hombre", 
+        "id": 18,
+        "description": "Zapatos casueles negros con una linea en la suela ",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_682777-MCO53461870030_012023-O.webp",
+        "category": "Zapatos H",
+        "price": 94900
+    },
+    {
+        "name": "Zapatillas BALENCIAGA", 
+        "id": 19,
+        "description": "Zapatillas deprotivas blancas BALENCIAGA ",
+        "image": "https://img.bestdealplus.com/ae04/kf/H9a1bc31d65064e778d4dc893db379dd5v.jpg",
+        "category": "Zapatos H",
+        "price": 4000000
+    },
+    {
+        "name": "Vestido flores", 
+        "id": 20,
+        "description": "Vestido largo estampado de manga corta con cuello cuadrado",
+        "image": "https://img.joomcdn.net/6c5ad1b1e2f80e2e5e360b309436be55e0799ed5_original.jpeg",
+        "category": "Ropa mujer",
+        "price": 100000
+    },
+    {
+        "name": "Blusa elegante mujer", 
+        "id": 21,
+        "description": "Blusa de manga larga para mujer elegante camisas de seda",
+        "image": "https://down-co.img.susercontent.com/file/sg-11134201-7rbma-lpwg1lj623sa6c",
+        "category": "Ropa mujer",
+        "price": 46000
+    },
+    {
+        "name": "Vestido verde corto", 
+        "id": 22,
+        "description": "Vestido verde con bordados en todo el vestido, de tirantas delgadas con cuello cuadrado",
+        "image": "https://image.made-in-china.com/202f0j00UvqVZNQBZbot/China-Wholesale-Custom-Made-Ropa-Mujer-Ladies-Fashion-Brand-Clothing-Apparel-Crochet-Cotton-Summer-Knitwear-Cardigan-Designer-Shein-Hoodies-Women-Dress-Sweater.webp",
+        "category": "Ropa mujer",
+        "price": 80000
+    },
+    {
+        "name": "Traje de dos piesas", 
+        "id": 23,
+        "description": "Traje de dos piezas azul, con botones y pantalon ancho",
+        "image": "https://coleccionabril.com.ar/img/cms/mobile_4.png",
+        "category": "Ropa mujer",
+        "price": 100000
+    },
+    {
+        "name": "Pantalones comodos", 
+        "id": 24,
+        "description": "Pantalones comodos para mujer, anchos y de moda",
+        "image": "https://b2cmattelsa.vtexassets.com/assets/vtex.file-manager-graphql/images/bc7cc14b-48a5-408f-b13b-2d17c025b870___88bb5d5e5335d08c7dbceabc2168e17e.jpg",
+        "category": "Ropa mujer",
+        "price": 80000
+    },
+    {
+        "name": "Conjunto verde NIKE", 
+        "id": 25,
+        "description": "Conjunto verde NIKE para mujer, chaqueta con linea y short con lineas",
+        "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d8f333d1-5edd-4d95-bd0f-ce230a08b78c/W+NSW+NK+WR+WVN+UV+FZ+JKT.png",
+        "category": "Ropa mujer",
+        "price": 500000
+    },
+    {
+        "name": "Sala aesthetic", 
+        "id": 26,
+        "description": "Sala blanca con sillas individuales, con conjines grandes",
+        "image": "https://i.pinimg.com/474x/da/b4/71/dab471bfeed173bf15d9841350fdcb38.jpg",
+        "category": "Salas",
+        "price": 3000000
+    },
+    {
+        "name": "Sala sencilla", 
+        "id": 27,
+        "description": "Sala gris con azul, con cojines azules, patas de color madera amarilla, sin reposabrazos",
+        "image": "https://hogarvenecia.com/wp-content/uploads/2024/04/1169-2-1.jpg",
+        "category": "Salas",
+        "price": 1200000
+    },
+    {
+        "name": "Salas cafe con gris", 
+        "id": 28,
+        "description": "Sala cafe con gris, un sofa grande y dos cafes tienen reposabrazos",
+        "image": "https://proyectosurbanos.com.co/wp-content/uploads/2022/05/1.png",
+        "category": "Salas",
+        "price": 3000000
+    },
+    {
+        "name": "Zapatos negros", 
+        "id": 29,
+        "description": "Zapatos deportivos negros con cordones y detalles en dorado",
+        "image": "https://i.ebayimg.com/thumbs/images/g/DqkAAOSwHh9lhIG3/s-l1200.jpg",
+        "category": "Zapatos M",
+        "price": 80000
+    },
+    {
+        "name": "Zapatos blancos semideportivos", 
+        "id": 30,
+        "description": "Zapatos deportivos casuales blancos con una suela cafe rojiso, con cordones",
+        "image": "https://sinlimitezcol.com/cdn/shop/products/Capturadepantalla2023-04-14174440.png?v=1697645042&width=1445",
+        "category": "Zapatos M",
+        "price": 100000
+    },
+    {
+        "name": "Tacones negros", 
+        "id": 30,
+        "description": "Tacones negros bajitos, con tacon cuadrado y correa muy cute",
+        "image": "https://reginaromero.com/cdn/shop/files/COLECCION_REGINA_7fd1a719-6f0a-43f5-9e02-182195a93ab3.jpg?v=1730492577&width=360",
+        "category": "Zapatos M",
+        "price": 100000
+    },
+    {
+        "name": "Tacones beige", 
+        "id": 32,
+        "description": "Tacones beige que el la punta tiene brillitos, con correa cute y un tacon cuadrado",
+        "image": "https://ae01.alicdn.com/kf/S7e9e53d67ae440cfb09191013805de55Z.jpg",
+        "category": "Zapatos M",
+        "price": 100000
+    },
+    {
+        "name": "Tocones dorados", 
+        "id": 33,
+        "description": "Tacones dorados con toque plateados y un monio muy cute plateado con toques dorados, tiene una correita con toques dorados y plateados",
+        "image": "https://media.gotrendier.com.co/media/p/2024/04/19/n_4yFClRwJ4sgaHa.407060d092486533.jpeg",
+        "category": "Zapatos M",
+        "price": 300000
+    },
+    {
+        "name": "Tacones negros con monio", 
+        "id": 34,
+        "description": "Tacones negros con toque plateados y un monio muy cute plateado, tiene una correita con toques plateados",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_917992-CBT49713137714_042022-O.webp",
+        "category": "Zapatos M",
+        "price": 100000
+    },
+    {
+        "name": "Tacones altos dorados", 
+        "id": 35,
+        "description": "Tacones dorados altos, con un corazon en la correa, con suela negra",
+        "image": "https://cdn3.cmoran.cl/7239-large_default/zapatos-mujer-tacon-1312-brush-off.jpg",
+        "category": "Zapatos M",
+        "price": 200000
+    },
+    {
+        "name": "Galaxy S20", 
+        "id": 36,
+        "description": "Celular SAMSUNG GALAXY S20 ULTRA",
+        "image": "https://i.blogs.es/b4cfaa/samsung-galaxy-s20-ultra/1366_2000.jpg",
+        "category": "Tecnologia",
+        "price": 1000000
+    },
+    {
+        "name": "Galaxy S10", 
+        "id": 37,
+        "description": "Celular samsung S10",
+        "image": "https://m.media-amazon.com/images/I/61j1LuCWgML.jpg",
+        "category": "Tecnologia",
+        "price": 100000
+    },
+    {
+        "name": "Iphone 16", 
+        "id": 38,
+        "description": "Iphne 16 Pro Max",
+        "image": "https://www.apple.com/v/iphone-16-pro/c/images/overview/apple-intelligence/apple_intelligence_endframe__ksa4clua0duu_xlarge.jpg",
+        "category": "Tecnologia",
+        "price": 600000
+    },
+    {
+        "name": "AirFryer Xiaomi", 
+        "id": 39,
+        "description": "Xiaomi Mi Smart AirFryer 1500W (6litros)",
+        "image": "https://www.avxperten.dk/images/product/86118/original/xiaomi-mi-smart-airfryer-1500w-6-liter-4.jpg",
+        "category": "Tecnologia",
+        "price": 300000
+    },
+    {
+        "name": "Freidora 3 en 1", 
+        "id": 40,
+        "description": "Freidora de aire mini4 en 1 Instant Vortex Color Rojo",
+        "image": "https://http2.mlstatic.com/D_Q_NP_708422-MLU78325675597_082024-O.webp",
+        "category": "Tecnologia",
+        "price": 100000
+    },
+    {
+        "name": "Robot aspiradora", 
+        "id": 41,
+        "description": "Robor aspiradora inteligente transportable",
+        "image": "https://www.lacasadelelectrodomestico.com/blog/wp-content/uploads/2023/06/mejor-robot-aspirador.jpg",
+        "category": "Tecnologia",
+        "price": 200000
+    },
+    {
+        "name": "Robot aspiradora con autocarga", 
+        "id": 42,
+        "description": "Robot aspiradora y trapeador 2 en 1 inteligente con autocarga ",
+        "image": "https://smart360.mx/cdn/shop/products/04.jpg?v=1681332511&width=1946",
+        "category": "Tecnologia",
+        "price": 300000
+    },
+    {
+        "name": "Nevera que reconoce comida", 
+        "id": 43,
+        "description": "Las neveras que reconocen la comida han llegado, se acabó el improvisar las comidas",
+        "image": "https://hisense.com.co/wp-content/uploads/2023/11/Product-Page-Neveras_general_04.jpg",
+        "category": "Tecnologia",
+        "price": 500000
+    },
+    {
+        "name": "Nevera energia", 
+        "id": 44,
+        "description": "La innovadora nevera con inteligencia artificial capaz de rebajar hasta un 30% el consumo de luz",
+        "image": "https://evvohome.com/cdn/shop/articles/16._Frigorificos-inteligentes-los-conoces.png?v=1701773238&width=2048",
+        "category": "Tecnologia",
+        "price": 600000
+    },
+    {
+        "name": "Televisor ROKU TV", 
+        "id": 45,
+        "description": "El sistema operativo de Roku llegará a los televisores inteligentes de Kalley en Colombia",
+        "image": "https://www.enter.co/wp-content/uploads/2024/08/Leonard_Blog_Image_001-1-768x432.png",
+        "category": "Tecnologia",
+        "price": 100000
     }
 ]
