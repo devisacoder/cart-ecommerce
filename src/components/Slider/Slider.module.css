@@ -3,10 +3,9 @@
     justify-content: center;
     position: relative;
 }
-
 .image {
+    width: 62vw;
     border-radius: 4px;
-    width: 68vw;
     height: 30vh;
 }
 
@@ -18,7 +17,6 @@
     display: flex;
     gap: 0.3rem;
 }
-
 .dot {
     width: 10px;
     height: 10px;
@@ -26,10 +24,6 @@
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.dot:hover {
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .active {
