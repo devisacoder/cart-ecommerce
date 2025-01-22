@@ -2,9 +2,14 @@
     color: black;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 }
-
+.title{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 30px;
+}
 .line {
     border-top: 1px solid #cecece; 
     margin-bottom: 20px ;

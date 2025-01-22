@@ -8,13 +8,13 @@ export const ProductContext = createContext()
 export const ProviderContext = ({ children }) => {
     const [products, setProducts] = useState([])
     const [category, setCategory] = useState([])
-    
+
     const filteredProducts = products.filter(product => product.category === "Promotions")
-    
+
     useEffect(() => {
         fetchProductosSlider()
     },[])
-    
+
     const fetchProductosSlider = async () => {
 
         const data = await getProductsSlider()
@@ -25,11 +25,19 @@ export const ProviderContext = ({ children }) => {
 
     }
 
+    const formatearPrecio = (precio) => {
+        return new Intl.NumberFormat("es-CL", {
+            style: "currency",
+            currency: "CLP",
+        }).format(precio);
+    }
+
     return(
         <ProductContext.Provider value={{ 
             products, 
             filteredProducts,
-            category
+            category,
+            formatearPrecio
         }}>
             {children}
         </ProductContext.Provider>

@@ -1,13 +1,18 @@
 import './Header.css'
-import { DropDown } from '../categorias/Categories'
 import { Search } from './search/Search'
 import cartIcon from '../../assets/cartIcon.svg'
+import { Link } from 'react-router'
 
 export const Header = () => {
     return (
         <section>
             <div className='container-header'>
-                <h1>Exclusive</h1>
+                <Link
+                    to={"/"} 
+                    className="title"
+                >
+                    Exclusive                    
+                </Link>
                 <Search/>
                 <img src={cartIcon} alt="cartIcon" className='cartIcon'/>
             </div>
