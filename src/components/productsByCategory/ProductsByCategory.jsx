@@ -1,5 +1,5 @@
 import { ProductContext } from "../../context/ProductContext"
-import { useParams } from "react-router"
+import { useParams } from "react-router-dom"
 import { useContext } from "react"
 import style from "../productsAll/Products.module.css"
 

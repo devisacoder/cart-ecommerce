@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { ProductContext } from '../../context/ProductContext';
 import { useDropDown } from '../../hooks/useDropDown';
 import styles from './Categories.module.css';
