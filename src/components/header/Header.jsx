@@ -11,7 +11,7 @@ export const Header = () => {
                     to={"/"}
                     className="title"
                 >
-                    Exclusive
+                    Exclusivo
                 </Link>
                 <Search/>
                 <img src={cartIcon} alt="cartIcon" className='cartIcon'/>

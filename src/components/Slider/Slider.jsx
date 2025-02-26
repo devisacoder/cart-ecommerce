@@ -13,7 +13,7 @@ export const Slider = () => {
     return (
         <div className={styles.container}>
             <div className={styles.imageWrapper}>
-                <SlideItem image={currentProduct.image} name={currentProduct.name} />
+                <SlideItem image={currentProduct.image} name={currentProduct.name} product={currentProduct.id}/>
                 <div className={styles.navigation}>
                     {filteredProducts?.map((_, index) => (
                         <span

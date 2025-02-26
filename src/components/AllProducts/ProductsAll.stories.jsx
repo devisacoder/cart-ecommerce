@@ -1,9 +1,9 @@
 import { BrowserRouter } from "react-router-dom";
 import { ProviderContext } from "../../context/ProductContext";
-import { AllProducts } from "./Products"
+import { AllProducts } from "./ProductsAll"
 
 export default {
-    title: 'Components/Products',
+    title: 'Components/ProductsAll',
     component: AllProducts,
     decorators: [
         (Story) => (

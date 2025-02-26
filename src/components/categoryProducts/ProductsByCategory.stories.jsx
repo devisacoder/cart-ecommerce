@@ -1,12 +1,12 @@
-import { ProductsByCategory } from "./ProductsByCategory.jsx";
+import { CategoryProducts } from "./ProductsByCategory.jsx";
 import { ProviderContext } from "../../context/ProductContext.jsx";
 import { MemoryRouter } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 
 export default {
-    title: 'Components/ProductsByCategory',
-    component: ProductsByCategory,
+    title: 'Components/CategoryProducts',
+    component: CategoryProducts,
     decorators: [
         (Story) => (
             <MemoryRouter initialEntries={['/category/Salas']}>
@@ -20,7 +20,7 @@ export default {
     ]
 }
 
-const Template = (args) => <ProductsByCategory {...args} />
+const Template = (args) => <CategoryProductsy {...args} />
 
 export const Default = Template.bind({});
 Default.args = {}

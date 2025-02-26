@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%
+}
+.containerProduct{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.containerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.imageProduct{
+    border-radius: 8px;
+    width: 50rem;
+    height: 40rem;
+}
+.nameProduct{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+.containerPrice{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.descriptionProduct{
+    font-size: 1.5rem;
+    width: 30rem;
+}
+.price{
+    font-size: 1.1rem;
+}
+.before{
+    font-size: 0.9rem;
+    color: #ff0000;
+    text-decoration: line-through;
+}
+.buttonProduct{
+    background-color: #111111;
+    color: white;
+    font-size: 1.2rem;
+    width: 24rem;
+    height: 4rem;
+    border: none;
+    cursor: pointer;
+}
+.buttonProduct:hover{
+    background-color: #252525;
+}
