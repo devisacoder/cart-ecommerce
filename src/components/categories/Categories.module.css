@@ -33,7 +33,7 @@
     color: #2e2e2e;
 }
 .item:hover {
-    background-color: #969696;
+    background-color: #c5c5c5;
 }
 
 @media (max-width: 700px) {

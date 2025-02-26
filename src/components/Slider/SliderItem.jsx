@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom'
 import styles from './Slider.module.css'
 
-export const SlideItem = ({ image, name}) => {
+export const SlideItem = ({ image, name, product}) => {
     return(
-        <div>
+        <Link to={`/product/${String(product)}`}>
             <img className={styles.image} src={image} alt={name} />
-        </div>
+        </Link>
     )
 }
