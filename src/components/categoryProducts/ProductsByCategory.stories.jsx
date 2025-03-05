@@ -3,6 +3,9 @@ import { ProviderContext } from "../../context/ProductContext.jsx";
 import { MemoryRouter } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
 
 export default {
     title: 'Components/CategoryProducts',
@@ -10,17 +13,19 @@ export default {
     decorators: [
         (Story) => (
             <MemoryRouter initialEntries={['/category/Salas']}>
-                <ProviderContext>
-                    <Routes>
-                        <Route path="/category/:categories" element={<Story />} />
-                    </Routes>
-                </ProviderContext>
+                <QueryClientProvider client={queryClient}>
+                    <ProviderContext>
+                        <Routes>
+                            <Route path="/category/:categories" element={<Story />} />
+                        </Routes>
+                    </ProviderContext>
+                </QueryClientProvider>
             </MemoryRouter>
         )
     ]
 }
 
-const Template = (args) => <CategoryProductsy {...args} />
+const Template = (args) => <CategoryProducts {...args} />
 
 export const Default = Template.bind({});
 Default.args = {}

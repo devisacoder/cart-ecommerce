@@ -1,29 +1,19 @@
 import { createContext } from "react"
 import { getProductsSlider} from '../service/getProductsSlider'
-import { useState } from "react"
-import { useEffect } from "react"
+import { useQuery } from "react-query"
 
 export const ProductContext = createContext()
 
 export const ProviderContext = ({ children }) => {
-    const [products, setProducts] = useState([])
-    const [category, setCategory] = useState([])
+
+    const { data: products = []} = useQuery('productsSlider', getProductsSlider)
 
     const filteredProducts = products.filter(product => product.category === "Promotions")
 
-    useEffect(() => {
-        fetchProductosSlider()
-    },[])
 
-    const fetchProductosSlider = async () => {
+    const category = products.length > 0 ? [...new Set(products.map(product => product.category))] : []
 
-        const data = await getProductsSlider()
-        setProducts(data)
 
-        const categoryName = [...new Set(data.map((product) => product.category))]
-        setCategory(categoryName)
-
-    }
 
     const formatearPrecio = (precio) => {
         return new Intl.NumberFormat("es-CL", {

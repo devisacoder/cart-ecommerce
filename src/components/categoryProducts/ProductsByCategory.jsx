@@ -20,7 +20,7 @@ export const CategoryProducts = () => {
                         className={style.containerItemProduct} 
                         to={`/product/${String(product.id)}`}
                     >
-                        <img src={product.image} className={style.imageProducts} alt={product.name} />
+                        <img loading="lazy" src={product.image} className={style.imageProducts} alt={product.name} />
                         <h3>{product.name}</h3>
                         <p>Price: {formatearPrecio(product.price)}</p>
                         {product.before && <p className={style.before}>Before: {formatearPrecio(product.before)}</p>}

@@ -6,6 +6,7 @@ import { ProductContext} from "../../context/ProductContext"
 
 export const Slider = () => {
     const {filteredProducts} = useContext(ProductContext)
+    
     const { currentIndex, setCurrentIndex } = useSlider(filteredProducts.length)
 
     const currentProduct = filteredProducts[currentIndex] || {};

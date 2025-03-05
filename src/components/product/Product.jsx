@@ -14,7 +14,7 @@ export const Product = () => {
             {filteresProduct?.map((product) => (
                 <div key={product.id} className={style.containerProduct}>
                     <div>
-                        <img  className={style.imageProduct} src={product.image} alt={product.name} />
+                        <img loading="lazy" className={style.imageProduct} src={product.image} alt={product.name} />
                     </div>
                     <div className={style.containerInfo}>
                         <div>

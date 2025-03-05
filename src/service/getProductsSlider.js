@@ -1,7 +1,6 @@
-const API = '../../public/productsSlider.json'
 
 export const getProductsSlider = async () => {
-    const data = await fetch(API)
-    const respons = data.json()
-    return respons
+        const response = await fetch('/productsSlider.json')
+        const data = await response.json()
+        return data
 }

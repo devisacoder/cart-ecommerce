@@ -1,7 +1,7 @@
 import { Header } from "../../components/header/Header"
 import { CategoryProducts } from "../../components/categoryProducts/ProductsByCategory"
 
-export const CategoryProductsPage = () => {
+export default function CategoryProductsPage() {
     return (
         <div>
             <Header />

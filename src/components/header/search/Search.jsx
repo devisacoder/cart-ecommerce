@@ -9,7 +9,7 @@ export const Search = () => {
                 placeholder="Buscar"
                 className='input-search'
             />
-            <button className='button-input'><img src={searchIcon} alt="" /></button>
+            <button aria-label='boton para buscar productos' className='button-input'><img src={searchIcon} alt="" /></button>
         </div>
     )
 }
