@@ -15,8 +15,10 @@ export const AllProducts = () => {
                     <Link key={product.id} className={style.containerItemProduct} to={`/product/${String(product.id)}`}>
                         <img src={product.image} className={style.imageProducts} alt={product.name} loading="lazy"/>
                         <h3>{product.name}</h3>
-                        <p>Price: {formatearPrecio(product.price)}</p>
-                        {product.before && <p className={style.before}>Before: {formatearPrecio(product.before)}</p>}
+                        <div className={style.containerPrice}>
+                            <p>Price: {formatearPrecio(product.price)}</p>
+                            {product.before && <p className={style.before}>Before: {formatearPrecio(product.before)}</p>}
+                        </div>
                     </Link>
                 ))}
             </div>
