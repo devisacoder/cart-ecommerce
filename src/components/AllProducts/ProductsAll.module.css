@@ -9,8 +9,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 1400px; /* Ajusta según lo necesario */
-    overflow: hidden; /* Evita expansiones extremas */
+    max-width: 1400px; 
+    overflow: hidden;
 }
 .containerItemProduct {
     align-items: center;
