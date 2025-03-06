@@ -1,60 +1,65 @@
-.containerDropDown{
+.containerDropDown {
+    padding-top: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
 }
+
 .dropDown {
+    padding: 0 10%;
     border: none;
     background-color: transparent;
     font-size: 18px;
     cursor: pointer;
     font-weight: 600;
     display: none;
+    color: rgb(37, 37, 37);
 }
 .containerItems {
+    width: 400px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 26px;
-    padding: 0 16%;
     cursor: pointer;
 }
 .item {
     justify-content: center;
     align-items: center;
-    background-color: #e6e6e6;
-    border-radius: 30rem;
+    border-radius: 8px;
     height: 3rem;
-    width: 6rem;
     flex-grow: 1;
     display: flex;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
+    padding-left: 8%;
+    justify-content: flex-start;
 }
 .item:hover {
-    background-color: #c5c5c5;
+    background-color: rgb(60, 60, 60);
 }
 
-@media (min-width: 320px) and (max-width: 700px) {
+.containerItems {
+    background-color: rgb(39, 39, 39);
+    border-radius: 4px;
+    display: none;
+    gap: 5px;
+}
+.containerItems.isOpen {
+    display: flex; 
+    z-index: 1000;
+    position: absolute;
+    top: 110px;
+} 
+.dropDown {
+    display: block;
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+    .containerItems.isOpen{
+        top: 90px;
+    }
     .containerItems{
-        padding: 10%;
-        gap: 50px;
-    }
-
-}
-
-@media (max-width: 700px) {
-    .containerItems {
-        background-color: rgba(231, 231, 231, 0.555);
-        display: none;
-        gap: 5px;
-    }
-    .containerItems.isOpen {
-        display: flex; 
-        z-index: 1000;
-    } 
-    .dropDown {
-        display: block;
+        width: 240px;
     }
 }

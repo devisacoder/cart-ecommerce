@@ -6,8 +6,6 @@ import { Link } from "react-router-dom"
 export const AllProducts = () => {
     const { products, formatearPrecio} = useContext(ProductContext)
 
-    console.log("Cantidad de productos en Storybook:", products.length);
-
     return (
         <div className={style.containerProducts}>
             <div className={style.products}>
