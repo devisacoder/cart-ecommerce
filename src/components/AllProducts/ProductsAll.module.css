@@ -48,6 +48,9 @@
         width: 6rem;
         height: 6rem;
     }
+    .containerPrice{
+        font-size: 0.8rem;
+    }
     .containerItemProduct h1 {
         font-size: 1rem;
     }
