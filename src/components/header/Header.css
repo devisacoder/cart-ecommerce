@@ -1,3 +1,9 @@
+.container{
+    width: 100%;
+    background-color:#ffffff;
+    z-index: 10000;
+    border-bottom: 0px solid rgb(180, 180, 180);
+}
 .container-header{
     color: black;
     display: flex;

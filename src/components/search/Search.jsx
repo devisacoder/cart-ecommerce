@@ -1,5 +1,5 @@
-import searchIcon from '../../../assets/searchIcon.svg'
 import './Search.css'
+import searchIcon from '../../assets/searchIcon.svg'
 
 export const Search = () => {
     return (

@@ -1,4 +1,3 @@
-// DropDown.jsx
 import { Link } from 'react-router-dom';
 import { ProductContext } from '../../context/ProductContext';
 import { useDropDown } from '../../hooks/useDropDown';
@@ -12,7 +11,7 @@ export const DropDown = () => {
   return (
     <div ref={dropdownRef} className={styles.containerDropDown}>
         <button className={styles.dropDown} onClick={toggleDropDown}>
-            Categories ▼
+            Categories  v
         </button>
         {isOpen && (
             <div className={`${styles.containerItems} ${isOpen && styles.isOpen}`}>

@@ -10,7 +10,9 @@ export const ProviderContext = ({ children }) => {
 
     const filteredProducts = products.filter(product => product.category === "Promotions")
 
+    
 
+    
     const category = products.length > 0 ? [...new Set(products.map(product => product.category))] : []
 
 
