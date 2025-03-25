@@ -7,8 +7,9 @@ import { Link } from "react-router-dom"
 
 export const CategoryProducts = () => {
     const { categories } = useParams()
-    const { products, formatearPrecio } = useContext(ProductContext)
+    const { products, formatearPrecio, searchProductsByCategory } = useContext(ProductContext)
 
+    console.log(searchProductsByCategory)
     const filteredProductsByCayegory = products.filter((product) => product.category === categories)
     
     return (

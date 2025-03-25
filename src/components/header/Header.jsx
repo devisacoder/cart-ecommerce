@@ -1,8 +1,8 @@
 import './Header.css'
 import { Search } from '../search/Search'
-import cartIcon from '../../assets/cartIcon.svg'
 import { Link } from 'react-router-dom'
 import { DropDown } from '../categories/Categories'
+import { UploadYourProducts } from '../UploadYourProducts/UploadYourProducts'
 
 export const Header = () => {
     return (
@@ -16,7 +16,7 @@ export const Header = () => {
                         Exclusivo
                     </Link>
                     <Search/>
-                    <img src={cartIcon} alt="cartIcon" className='cartIcon'/>
+                    <UploadYourProducts/>
                 </div>
                     <DropDown/>
             </div>
