@@ -13,14 +13,8 @@ export const AllProducts = () => {
             <div className={style.products}>
                 {filteredProducts.map((product) => (
                     <div key={product.id} className={style.containerItemProduct}>
-                        <img 
-                            className={style.iconAddCart} 
-                            src={addCart} 
-                            alt="icono para agregar productos al carrito"
-                        />
-                        
                         <Link to={`/product/${String(product.id)}`} className={style.fullLink}>
-                            <img src={product.image} className={style.imageProducts} alt={product.name} loading="lazy" />
+                            <img src={product.images[0]} className={style.imageProducts} alt={product.name} loading="lazy" />
                             <h3>{product.name}</h3>
                             <div className={style.containerPrice}>
                                 <p>Price: {formatearPrecio(product.price)}</p>

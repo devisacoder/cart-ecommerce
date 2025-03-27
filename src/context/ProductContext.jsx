@@ -1,16 +1,19 @@
 import { createContext } from "react"
-import { getProductsSlider} from '../service/getProductsSlider'
 import { useQuery } from "react-query"
 import { useState } from "react"
+import { getProducts } from "../service/getProductsSlider"
 
 export const ProductContext = createContext()
 
 export const ProviderContext = ({ children }) => {
 
-    const { data: products = []} = useQuery('productsSlider', getProductsSlider)
+    const { data: products = []} = useQuery('products', getProducts)
     const [ busqueda, setBusqueda ] = useState('')
 
-    const productsPromotios = products.filter(product => product.category === "Promotions")
+    const productsPromotios = products.filter(product => 
+        product.category.includes('Promotions')
+    );
+    
 
     const category = products.length > 0 ? [...new Set(products.map(product => product.category))] : []
 

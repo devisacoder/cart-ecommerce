@@ -1,0 +1,115 @@
+.container-form-upload-your-products{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+.container-form-upload-your-products form {
+    background-color: rgb(0, 0, 0);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 400px;
+    height: auto;
+    color: white;
+    position: relative;
+}
+.input-upload {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+}
+.input-upload:focus{
+    outline: none;
+}
+.button-upload{
+    height: 40px;
+    background-color: #43ff82;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    color: rgb(31, 31, 31);
+}
+.preview-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+  
+.image-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}  
+.loading-overlay{
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.loading form {
+    opacity: 0.5;
+    pointer-events: none; 
+}
+.form-header{
+    display: flex;
+    justify-content: flex-end;
+}
+.close-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0.2rem;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff0000;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.success-message {
+    margin-top: 10px;
+    padding: 10px;
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}

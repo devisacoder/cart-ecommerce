@@ -8,13 +8,14 @@ export const Product = () => {
     const { products, formatearPrecio } = useContext(ProductContext)
 
     const filteresProduct = products.filter((product) => product.id === Number(id))
+    console.log(filteresProduct)
     
     return(
         <div className={style.container}>
             {filteresProduct?.map((product) => (
                 <div key={product.id} className={style.containerProduct}>
                     <div>
-                        <img loading="lazy" className={style.imageProduct} src={product.image} alt={product.name} />
+                        <img loading="lazy" className={style.imageProduct} src={product.images?.[0]} alt={product.name} />
                     </div>
                     <div className={style.containerInfo}>
                         <div>

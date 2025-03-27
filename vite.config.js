@@ -6,4 +6,7 @@ export default defineConfig({
   plugins: [react({
     exclude: [/\.stories\.[tj]sx?$/],
   })],
+  server: {
+
+  }
 })

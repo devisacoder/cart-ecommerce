@@ -6,8 +6,16 @@ import { useContext } from 'react';
 
 export const DropDown = () => {
   const { isOpen, toggleDropDown, dropdownRef } = useDropDown();
-  const { category } = useContext(ProductContext);
+  const { products } = useContext(ProductContext);
 
+  const categories = products
+    ? products
+        .flatMap(product => Array.isArray(product.category) ? product.category : [product.category]) 
+        .filter(Boolean)
+    : [];
+
+  const uniqueCategories = [...new Set(categories)]; 
+  
   return (
     <div ref={dropdownRef} className={styles.containerDropDown}>
         <button className={styles.dropDown} onClick={toggleDropDown}>
@@ -15,11 +23,11 @@ export const DropDown = () => {
         </button>
         {isOpen && (
             <div className={`${styles.containerItems} ${isOpen && styles.isOpen}`}>
-            {category.map((cat, index) => (
-                <Link key={index} to={`/category/${cat}`} className={styles.item}>
-                {cat}
-                </Link>
-            ))}
+              {uniqueCategories.map((category, index) => (
+                  <Link key={index} to={`/category/${category}`} className={styles.item}>
+                      {category}
+                  </Link>
+              ))}
             </div>
         )}
     </div>
