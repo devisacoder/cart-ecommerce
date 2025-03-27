@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './UploadYourProducts.css'
 import { UploadForm } from '../uploadFrom/UploadForm.jsx'
 import { useUploadYourProducts } from '../../hooks/useUploadYourProducts.jsx'

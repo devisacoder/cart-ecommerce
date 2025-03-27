@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useQueryClient } from "react-query"
 
 export const useUploadYourProducts = () => {
   const [imagePreviews, setImagePreviews] = useState([])
@@ -15,9 +16,10 @@ export const useUploadYourProducts = () => {
     price: "",
   })
 
+  const queryClient = useQueryClient();
+  
   const handleClick = () => {
     setOpen((prev) => !prev)
-    console.log("abrir")
   }
 
   const handleImageChange = (e) => {
@@ -35,7 +37,14 @@ export const useUploadYourProducts = () => {
   }
 
   const resetForm = () => {
-    setProductData({ name: "", description: "", category: "", stock: "", price: "" })
+    setProductData({ 
+      name: "", 
+      description: "", 
+      category: "", 
+      stock: "", 
+      discount: "",
+      price: ""
+    })
     setImages([])
     setImagePreviews([])
   }
@@ -70,6 +79,7 @@ export const useUploadYourProducts = () => {
       if (response.ok) {
         setMessage("✅ Producto subido con éxito")
         resetForm()
+        queryClient.invalidateQueries("products")
       } else {
         throw new Error(result.message || "Error al subir el producto")
       }

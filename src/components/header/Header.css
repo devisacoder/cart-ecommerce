@@ -3,9 +3,9 @@
     background-color:#ffffff;
     z-index: 10000;
     border-bottom: 0px solid rgb(180, 180, 180);
-    padding: 0.5%;
 }
 .container-header{
+    gap: 10px;
     color: black;
     display: flex;
     align-items: center;

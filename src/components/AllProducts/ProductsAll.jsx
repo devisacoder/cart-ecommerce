@@ -2,8 +2,6 @@ import { useContext } from "react"
 import { ProductContext } from "../../context/ProductContext"
 import style from "./ProductsAll.module.css"
 import { Link } from "react-router-dom"
-import addCart from '../../assets/addCart.svg'
-
 
 export const AllProducts = () => {
     const { filteredProducts, formatearPrecio} = useContext(ProductContext)
@@ -18,7 +16,8 @@ export const AllProducts = () => {
                             <h3>{product.name}</h3>
                             <div className={style.containerPrice}>
                                 <p>Price: {formatearPrecio(product.price)}</p>
-                                {product.before && <p className={style.before}>Before: {formatearPrecio(product.before)}</p>}
+                                {product.discount > 0 && <p className={style.discount}>Before: {formatearPrecio(product.discount)}</p>}
+
                             </div>
                         </Link>
                     </div>

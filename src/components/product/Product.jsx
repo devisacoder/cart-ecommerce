@@ -8,7 +8,6 @@ export const Product = () => {
     const { products, formatearPrecio } = useContext(ProductContext)
 
     const filteresProduct = products.filter((product) => product.id === Number(id))
-    console.log(filteresProduct)
     
     return(
         <div className={style.container}>
