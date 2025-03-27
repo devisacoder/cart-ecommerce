@@ -1,28 +1,30 @@
-import { useState, useEffect } from "react";
+// useDropDown.js
+import { useState, useEffect, useRef } from "react";
 
 export const useDropDown = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 700);
-    
-        useEffect(() => {
-            const handleResize = () => {
-                setIsSmallScreen(window.innerWidth <= 700);
-                if (window.innerWidth > 700) {
-                    setIsOpen(true); // Asegurar que esté abierto en pantallas grandes
-                }else{
-                    setIsOpen(false); // Asegurar que esté cerrado en pantallas pequeñas
-                }   
-            };
-    
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-    
-        const toggleDropDown = () => {
-            if (isSmallScreen) {
-                setIsOpen((prevState) => !prevState);
-            }
-        };
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
-    return { isOpen, isSmallScreen, toggleDropDown }
-}
+  const toggleDropDown = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
+  const closeDropDown = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        closeDropDown();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  return { isOpen, toggleDropDown, closeDropDown, dropdownRef };
+};

@@ -1,4 +1,11 @@
+.container{
+    width: 100%;
+    background-color:#ffffff;
+    z-index: 10000;
+    border-bottom: 0px solid rgb(180, 180, 180);
+}
 .container-header{
+    gap: 10px;
     color: black;
     display: flex;
     align-items: center;
@@ -12,7 +19,7 @@
 }
 .line {
     border-top: 1px solid #cecece; 
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
     width: 100%;
 }
 

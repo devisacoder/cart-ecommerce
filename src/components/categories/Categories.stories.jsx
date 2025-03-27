@@ -1,17 +1,23 @@
 import { DropDown } from './Categories.jsx'
 import { ProviderContext } from '../../context/ProductContext.jsx';
-import { BrowserRouter } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { MemoryRouter } from 'react-router-dom';
+
+const queryClient = new QueryClient();
+
 
 export default {
   title: 'Components/DropDown',
   component: DropDown,
   decorators: [
     (Story) => (
-    <BrowserRouter>
-      <ProviderContext>
-        <Story />
-      </ProviderContext>
-    </BrowserRouter>
+      <MemoryRouter>
+        <QueryClientProvider client={queryClient}>
+          <ProviderContext>
+            <Story />
+          </ProviderContext>
+        </QueryClientProvider>
+      </MemoryRouter>
     ),
   ],
 };

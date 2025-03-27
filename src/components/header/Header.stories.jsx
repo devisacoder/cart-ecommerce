@@ -1,14 +1,22 @@
 import { BrowserRouter } from "react-router-dom"
 import { Header} from './Header'
+import { QueryClient, QueryClientProvider } from "react-query"
+import { ProviderContext } from "../../context/ProductContext"
+
+const queryClient = new QueryClient()
 
 export default {
     title: 'Components/Header',
-    componentL: Header,
+    component: Header,
     decorators: [
         (Story) => (
-            <BrowserRouter>
-                <Story />
-            </BrowserRouter>
+            <QueryClientProvider client={queryClient}>
+                <BrowserRouter>
+                    <ProviderContext>
+                        <Story />
+                    </ProviderContext>
+                </BrowserRouter>
+            </QueryClientProvider>
         )
     ]
 }

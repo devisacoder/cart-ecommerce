@@ -9,18 +9,20 @@ export const CategoryProducts = () => {
     const { categories } = useParams()
     const { products, formatearPrecio } = useContext(ProductContext)
 
-    const filteredProductsByCayegory = products.filter((product) => product.category === categories)
-    
+    const filteredProductsByCayegory = (products ?? []).filter((product) =>
+        product.category.some(cat => cat?.toLowerCase() === categories?.toLowerCase())
+    );
+
     return (
         <div className={style.containerProducts}>
             <div className={style.products}>
-                {filteredProductsByCayegory.map((product) => (
+                {filteredProductsByCayegory?.map((product) => (
                     <Link 
                         key={product.id} 
-                        className={style.containerItemProduct} 
+                        className={`${style.containerItemProduct} ${style.fullLink}`} 
                         to={`/product/${String(product.id)}`}
                     >
-                        <img src={product.image} className={style.imageProducts} alt={product.name} />
+                        <img loading="lazy" src={product.images[0]} className={style.imageProducts} alt={product.name} />
                         <h3>{product.name}</h3>
                         <p>Price: {formatearPrecio(product.price)}</p>
                         {product.before && <p className={style.before}>Before: {formatearPrecio(product.before)}</p>}

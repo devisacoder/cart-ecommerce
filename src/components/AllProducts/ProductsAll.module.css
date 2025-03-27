@@ -2,57 +2,95 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0 12%;
+    padding: 2%;
 } 
+
 .products {
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    max-width: 1400px; 
+    overflow: visible;
+    margin-top: 20px;
 }
+
 .containerItemProduct {
+    position: relative;
+    align-items: center;
+    display: flex;
     text-align: center;
+    flex-direction: column;
     background-color: #f7f7f7; 
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width:12rem;
+    width: 14rem;
     cursor: pointer;
-    text-decoration: none;
-    color: #2e2e2e;
 }
+
+.containerItemProduct:hover {
+    background-color: #f0f0f0; 
+}
+
+.fullLink {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .imageProducts {
-    width: 8rem;
+    width: 12rem;
     height: 8rem;
     border-radius: 10px;
 } 
-.before{
-    color: #ff0000;
+
+.discount {
+    color: #ba0000;
     text-decoration: line-through;
 }
-.containerItemProduct:hover {
-    background-color: #f0f0f0; 
 
+.iconAddCart {
+    background-color: #000000;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    z-index: 100;
+    display: none; 
+    cursor: pointer;
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
+.containerItemProduct:hover .iconAddCart {
+    display: block; 
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
     .containerItemProduct {
-        width: 4rem;
+        width: 6rem;
     }
     .imageProducts {
-        width: 3rem;
-        height: 3rem;
+        width: 6rem;
+        height: 6rem;
+    }
+    .containerPrice {
+        font-size: 0.8rem;
     }
     .containerItemProduct h1 {
         font-size: 1rem;
     }
 }
-@media (min-width: 501px) and (max-width: 800px) {
+
+@media (min-width: 700px) and (max-width: 800px) {
     .containerItemProduct {
-        width: 7rem;
+        width: 8rem;
     }
     .imageProducts {
-        width: 5rem;
-        height: 4rem;
+        width: 7rem;
+        height: 7rem;
     }
     .containerItemProduct h1 {
         font-size: 1.5rem;

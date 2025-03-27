@@ -1,29 +1,25 @@
 import { createContext } from "react"
-import { getProductsSlider} from '../service/getProductsSlider'
+import { useQuery } from "react-query"
 import { useState } from "react"
-import { useEffect } from "react"
+import { getProducts } from "../service/getProductsSlider"
 
 export const ProductContext = createContext()
 
 export const ProviderContext = ({ children }) => {
-    const [products, setProducts] = useState([])
-    const [category, setCategory] = useState([])
 
-    const filteredProducts = products.filter(product => product.category === "Promotions")
+    const { data: products = []} = useQuery('products', getProducts)
+    const [ busqueda, setBusqueda ] = useState('')
 
-    useEffect(() => {
-        fetchProductosSlider()
-    },[])
+    const productsPromotios = products.filter(product => 
+        product.category.includes('Promotions')
+    );
+    
 
-    const fetchProductosSlider = async () => {
+    const category = products.length > 0 ? [...new Set(products.map(product => product.category))] : []
 
-        const data = await getProductsSlider()
-        setProducts(data)
-
-        const categoryName = [...new Set(data.map((product) => product.category))]
-        setCategory(categoryName)
-
-    }
+    const filteredProducts = products.filter(product => 
+        product.name.toLowerCase().includes(busqueda.toLocaleLowerCase())
+    )
 
     const formatearPrecio = (precio) => {
         return new Intl.NumberFormat("es-CL", {
@@ -34,10 +30,13 @@ export const ProviderContext = ({ children }) => {
 
     return(
         <ProductContext.Provider value={{ 
-            products, 
-            filteredProducts,
             category,
-            formatearPrecio
+            busqueda,
+            products, 
+            setBusqueda,
+            formatearPrecio,
+            filteredProducts,
+            productsPromotios,
         }}>
             {children}
         </ProductContext.Provider>
