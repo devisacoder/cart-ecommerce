@@ -12,7 +12,7 @@ export default {
     component: Product,
     decorators: [
         (Story) => (
-            <MemoryRouter initialEntries={['/product/12']}>
+            <MemoryRouter initialEntries={['/product/1']}>
                 <QueryClientProvider client={queryClient}>
                     <ProviderContext>
                         <Routes>

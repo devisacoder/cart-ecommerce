@@ -12,7 +12,7 @@ export default {
     component: CategoryProducts,
     decorators: [
         (Story) => (
-            <MemoryRouter initialEntries={['/category/Salas']}>
+            <MemoryRouter initialEntries={['/category/promotions']}>
                 <QueryClientProvider client={queryClient}>
                     <ProviderContext>
                         <Routes>

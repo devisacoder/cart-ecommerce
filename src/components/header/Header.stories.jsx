@@ -7,7 +7,7 @@ const queryClient = new QueryClient()
 
 export default {
     title: 'Components/Header',
-    componentL: Header,
+    component: Header,
     decorators: [
         (Story) => (
             <QueryClientProvider client={queryClient}>

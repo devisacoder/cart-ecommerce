@@ -9,7 +9,7 @@ export const AllProducts = () => {
     return (
         <div className={style.containerProducts}>
             <div className={style.products}>
-                {filteredProducts.map((product) => (
+                {filteredProducts?.map((product) => (
                     <div key={product.id} className={style.containerItemProduct}>
                         <Link to={`/product/${String(product.id)}`} className={style.fullLink}>
                             <img src={product.images[0]} className={style.imageProducts} alt={product.name} loading="lazy" />
