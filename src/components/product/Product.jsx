@@ -20,7 +20,7 @@ export const Product = () => {
                         <div>
                             <h3 className={style.nameProduct}>{product.name}</h3>
                             <div className={style.containerPrice}>
-                                {product.before && <p className={style.before }>Before: {formatearPrecio(product.before)}</p>}
+                                {product.discount > 0 && <p className={style.discount}>Before: {formatearPrecio(product.discount)}</p>}
                                 <p className={style.price}>Price: {formatearPrecio(product.price)}</p>
                             </div>
                         </div>
